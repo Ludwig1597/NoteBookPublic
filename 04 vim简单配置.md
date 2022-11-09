@@ -43,12 +43,12 @@ sjx@Samsung:~$
 ### 修改colorscheme
 
 最喜欢的主题是darkblue，但是，底下的状态栏，灰色和亮蓝色实在看不清。故作修改。
-
+```shell
 cd /usr/share/vim/vim81/colors/
 sudo cp darkblue.vim darkblueTest.vim
 sudo chown -R sjx darkblueTest.vim
 vim darkblueTest.vim
-
+```
 将第35行：hi StatusLine guifg=blue guibg=darkgray gui=none ctermfg=blue ctermbg=gray term=none cterm=none  
 的ctermfg=blue改成 ---> ctermfg=56 (紫色)
 
@@ -58,5 +58,5 @@ vim darkblueTest.vim
 第18行，也做修改。  
 18 hi ErrorMsg guifg=#ffffff guibg=#287eff ctermfg=56 ctermbg=lightblue
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU3MjUzMTY0XX0=
+eyJoaXN0b3J5IjpbLTU5MzYzMTY0Ml19
 -->
