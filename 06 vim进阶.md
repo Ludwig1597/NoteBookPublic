@@ -2,7 +2,55 @@
 
 # vim进阶
 
-## vim下载插件
+## vim配置
+
+.vimrc提供了一种持久化配置的方式，让我们自定义配置。
+
+### 常用配置
+
+set nu "显示行号
+set shiftwidth=4 "设置缩进的空格数为4
+set tabstop=4 "设置软制表符宽度为4
+set autoindent "设置自动缩进
+set cindent "使用C/C++语言的自动缩进方式
+set showmatch "光标遇到圆括号、方括号、大括号时，自动高亮对应另一个括号
+set ruler "在状态栏显示光标的当前位置（位于哪一行、哪一列）
+set statusline=%f\ -\ FileType=%y "设置状态栏
+set hlsearch "设置高亮显示搜素字符串（highlight search）
+set incsearch "设置增亮搜索，边搜索边高亮
+set t_Co=256 "启动256色
+syntax on "高亮显示
+syntax enable
+colorscheme darkblue "设置主题色为darkblue
+
+可以新增的：
+
+set foldmethod=indent "设置折叠方式
+
+-   `:h option-list` 可以看到所有设置的选项
+
+### vim中的映射
+
+#### vim映射初认识
+
+-   `let mapleader=","` 设置leader键，常用逗号或空格
+-   `inoremap <leader>w <Esc>:w<cr>` 在insert模式下，使用`,w`提代退出冒号保存
+-   `inoremap jj <Esc>` 在insert模式下，使用`jj`提代esc键进入normal模式
+
+> 为什么是jj因为英文中几乎没有两个j连起来的英文单词，所以几乎不会产生冲突
+
+使用ctrl+h/j/k/l代替ctrl+w h/j/k/l去切换窗口
+
+-   `noremap <C-h> <C-w>h` 向左切换窗口
+-   `noremap <C-j> <C-w>j` 向下切换窗口
+-   `noremap <C-k> <C-w>k` 向上切换窗口
+-   `noremap <C-l> <C-w>l` 向右切换窗口
+
+4.  ZZ 退出当前窗口
+
+> 可以参考github上vim-go教程学习vimrc文件配置
+
+## vim插件下载
 
 ### 00 安装vim插件管理器
 
@@ -85,6 +133,8 @@ Plug 'preservim/nerdtree'
 
 1.  :NERDTree命令用于打开目录
 2.  vim .vimrc 添加快捷键
+
+> 我们可以通过vimscript脚本语言实现更多vim的控制，开发自己的插件
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyODczNTA4N119
+eyJoaXN0b3J5IjpbLTYwNzc1MjU0Ml19
 -->
