@@ -21,21 +21,21 @@
 
 ## vim简单配置
 
-sjx@Samsung:~$ cat .vimrc
-set nu "显示行号
-set shiftwidth=4 "设置缩进的空格数为4
-set tabstop=4 "设置软制表符宽度为4
-set autoindent "设置自动缩进
-set cindent "使用C/C++语言的自动缩进方式
-set showmatch "光标遇到圆括号、方括号、大括号时，自动高亮对应另一个括号
-set ruler "在状态栏显示光标的当前位置（位于哪一行、哪一列）
-set statusline=%f\ -\ FileType=%y "设置状态栏
-set hlsearch "设置高亮显示搜素字符串
-set incsearch "设置增亮搜索，边搜索边高亮
-set t_Co=256 "启动256色
-syntax on "高亮显示
-syntax enable
-colorscheme darkblue "设置主题色为darkblue
+    sjx@Samsung:~$ cat .vimrc
+    set nu "显示行号
+    set shiftwidth=4 "设置缩进的空格数为4
+    set tabstop=4 "设置软制表符宽度为4
+    set autoindent "设置自动缩进
+    set cindent "使用C/C++语言的自动缩进方式
+    set showmatch "光标遇到圆括号、方括号、大括号时，自动高亮对应另一个括号
+    set ruler "在状态栏显示光标的当前位置（位于哪一行、哪一列）
+    set statusline=%f\ -\ FileType=%y "设置状态栏
+    set hlsearch "设置高亮显示搜素字符串
+    set incsearch "设置增亮搜索，边搜索边高亮
+    set t_Co=256 "启动256色
+    syntax on "高亮显示
+    syntax enable
+    colorscheme darkblue "设置主题色为darkblue
 
 
 sjx@Samsung:~$
@@ -60,3 +60,4 @@ vim darkblueTest.vim
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTQwMzEyODUwXX0=
 -->
+
