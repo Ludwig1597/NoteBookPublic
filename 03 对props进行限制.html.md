@@ -34,6 +34,11 @@
         class Person extends React.Component{
             render(){
                 const {name,sex,age}=this.props
+                ======================================
+         //props是只读的
+
+//this.props.name="jack";//报错 因为props是只读的       
+============================================
                 return (
                     <ul>
                         <li>姓名: {name}</li>
@@ -78,5 +83,5 @@
 
 </html>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjQ1MjAxODhdfQ==
+eyJoaXN0b3J5IjpbMTMxNDQ1NjcyOF19
 -->
